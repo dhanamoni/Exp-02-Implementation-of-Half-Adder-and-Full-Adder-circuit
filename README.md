@@ -1,4 +1,4 @@
-![Screenshot 2023-12-13 024550](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/b9ea02a8-f82c-4a1c-8e72-23ce21ed2128)# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:

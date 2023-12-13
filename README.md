@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+![Screenshot 2023-12-13 024550](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/b9ea02a8-f82c-4a1c-8e72-23ce21ed2128)# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -34,21 +34,52 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin Carry = A
 Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
-### 
-Program:
-/*
-Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
-Logic symbol & Truthtable
-RTL realization
+### Program:
+~~~
+Half Adder:
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum,carry;
+xor(sum,a,b);
+and(carry,a,b)
+endmodule
 
-### Output:
-### RTL
-### TIMING DIAGRAM
+Full Adder:
+module halfadder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+xor(sum,a,b,c);
+assign carry=a&b | b&c | a&c
+endmodule
+Developed by: Monika D
+RegisterNumber: 23013746  
+~~~
+### Truth table:
+Half Adder Circuit:
 
+![Screenshot 2023-12-13 023944](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/e5b46df2-82da-4f5c-8101-b7aa08b8680e)
 
-### TRUTH TABLE 
+Full Adder Ciruit:
+
+![Screenshot 2023-12-13 024106](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/56f7f85f-c4f5-4b94-a479-b33177f63870)
+
+### RTL realization:
+Half Adder Circuit:
+
+![Screenshot 2023-12-13 024233](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/e9ad806a-69c3-4578-b4d9-05b055e2a14c)
+
+Full Adder Circuit:
+
+![Screenshot 2023-12-13 024357](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/2f4173a1-eacf-487b-9bad-50e456606ed6)
+
+### Output waveform:
+Half Adder Circuit:
+
+![Screenshot 2023-12-13 024535](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/bec02bff-dc12-497f-8b99-5a11c847753d)
+
+Full Adder Circuit:
+
+![Screenshot 2023-12-13 024550](https://github.com/dhanamoni/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/151629757/5e96961b-ce7f-4246-b321-e6b6215e942a)
 
 ### Result:
+To design a half adder and full adder circuit and verify its truth table in Quartus using Verilog programming
